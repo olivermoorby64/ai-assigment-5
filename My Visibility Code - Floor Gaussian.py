@@ -97,18 +97,18 @@ def customPlotting(x_data, y_data, popt, pcov, title=None, xlabel=None, ylabel=N
     plt.legend()
 
 distance, v, popt, pcov = variables("H:\\University Folder\\QIL Code\\Single Photon Data\\", "40.txt", 0.1, 18.38, 0.8)
-#customPlotting(distance, v, popt, pcov, "40 nm Filter Single Photons", "Displacement (mm)", "Visibility")
+customPlotting(distance, v, popt, pcov, "40 nm Filter Single Photons", "Displacement (mm)", "Visibility")
 
 distance, v, popt, pcov = variables("H:\\University Folder\\QIL Code\\Single Photon Data\\", "3.txt", 0.1, 18.4, 0.5)
-#customPlotting(distance, v, popt, pcov, "40 nm & 3 nm Filter Single Photons", "Displacement (mm)", "Visibility")
+customPlotting(distance, v, popt, pcov, "40 nm & 3 nm Filter Single Photons", "Displacement (mm)", "Visibility")
 
 distance, v, popt, pcov = variables("H:\\University Folder\\QIL Code\\Single Photon Data\\", "10.txt", 0.1, 18.41, 0.6)
-#(distance, v, popt, pcov, "40 nm & 10 nm Filter Single Photons", "Displacement (mm)", "Visibility")
-#plt.show()
+customPlotting(distance, v, popt, pcov, "40 nm & 10 nm Filter Single Photons", "Displacement (mm)", "Visibility")
+plt.show()
 
 distance, v, popt, pcov = variables("H:\\University Folder\\QIL Code\\IR Laser Data\\", "IR-laser.txt", 0.82927, 18.0377, 2.12022)
-customPlotting(distance, v, popt, pcov, "IR Laser", "Displacement (mm)", "Visibility")
-plt.show()
+#customPlotting(distance, v, popt, pcov, "IR Laser", "Displacement (mm)", "Visibility")
+#plt.show()
 
 distance, v, popt, pcov = variables("H:\\University Folder\\QIL Code\\HeNe Laser Data\\", "He-laser.txt", 0.05, 18.2, 0.6)
 #customPlotting(distance, v, popt, pcov, "HeNe Laser", "Displacement (mm)", "Visibility")
